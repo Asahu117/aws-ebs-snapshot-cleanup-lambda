@@ -1,7 +1,5 @@
-#lambda function for deleting unused snapshots
-
-
-
+#lambda_function.py
+#lambda function to delete old snapshots of EBS volumes that are not attached to any EC2 instance and are older than a specified retention period.
 import boto3
 from botocore.exceptions import ClientError
 from datetime import datetime, timezone
